@@ -4,7 +4,9 @@
   "description": "Apache Tika promise based API client",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -30,8 +32,10 @@
     "abind": "^1.0.5",
     "csvtojson": "^2.0.10",
     "esm": "^3.2.25",
-    "jszip": "^3.5.0",
-    "node-fetch": "^2.6.1",
-    "query-string-manipulator": "^1.2.2"
-  }
+    "jszip": "^3.7.0",
+    "node-fetch": "^2.6.7",
+    "query-string-manipulator": "^1.2.2",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
